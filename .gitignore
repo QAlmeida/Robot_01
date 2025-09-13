@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Robot Framework
+reports/
+output.xml
+log.html
+report.html
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env & logs
+.env
+*.log
+
+# IDE
+.idea/
+.vscode/
+
+# Node/Playwright (if any cache)
+node_modules/

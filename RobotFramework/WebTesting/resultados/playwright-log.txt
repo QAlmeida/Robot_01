@@ -1,0 +1,78 @@
+{"level":30,"time":"2025-07-31T12:01:06.278Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Listening on 127.0.0.1:64863"}
+(node:17716) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-07-31T12:01:06.795Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-31T12:01:07.272Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-07-31T12:01:07.274Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-31T12:01:07.273Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-31T12:01:07.285Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-31T12:01:07.286Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-31T12:01:07.315Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Changed active context"}
+{"level":30,"time":"2025-07-31T12:01:07.838Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-31T12:01:07.840Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Changed active page"}
+{"level":30,"time":"2025-07-31T12:01:09.050Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-31T12:01:09.059Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-07-31T12:01:09.074Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-07-31T12:01:09.100Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T12:01:09.100Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Strict mode is enabled, find Locator with //button[contains(., 'Continuar comprando')] in page."}
+{"level":30,"time":"2025-07-31T12:01:09.615Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T12:01:09.623Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T12:01:09.623Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Strict mode is enabled, find Locator with //a[contains(text(),'Eletrônicos')] in page."}
+{"level":30,"time":"2025-07-31T12:01:11.478Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T12:01:11.598Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method getText"}
+{"level":30,"time":"2025-07-31T12:01:11.598Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Strict mode is enabled, find Locator with (//span[contains(text(),'$FRASE')])[1] in page."}
+{"level":50,"time":"2025-07-31T12:01:21.604Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","err":{"type":"TimeoutError","message":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//span[contains(text(),\\'$FRASE\\')])[1]')\u001b[22m\n","stack":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//span[contains(text(),\\'$FRASE\\')])[1]')\u001b[22m\n\n    at getTextContent (C:\\Users\\iuria\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js:11580:33)\n    at getText (C:\\Users\\iuria\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js:11594:21)\n    at async PlaywrightServer.getText (C:\\Users\\iuria\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js:13135:28)","name":"TimeoutError"},"msg":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//span[contains(text(),\\'$FRASE\\')])[1]')\u001b[22m\n"}
+{"level":30,"time":"2025-07-31T12:01:21.605Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')[22m
+
+    at getTextContent (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11580:33)
+    at getText (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11594:21)
+    at async PlaywrightServer.getText (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-07-31T12:01:21.614Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-31T12:01:21.614Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","Take screenshot with options: ":{"path":"C:\\Robot_01\\RobotFramework\\WebTesting\\resultados\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-31T12:01:21.870Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-31T12:01:21.911Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-31T12:01:21.911Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Strict mode is disabled, return Locator: //a[@id='nav-cart'] in page."}
+{"level":30,"time":"2025-07-31T12:01:21.911Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","Take screenshot with options: ":{"path":"C:\\Robot_01\\RobotFramework\\WebTesting\\resultados\\browser\\screenshot\\screenshot.png.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false,"mask":[{"_frame":{"_type":"Frame","_guid":"frame@65a060360980f2c7919a39d13ebfbcad"},"_selector":"//a[@id='nav-cart']"}]}}
+{"level":30,"time":"2025-07-31T12:01:22.147Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-31T12:01:22.152Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-31T12:01:22.187Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Removed page=1d346512-1bdd-4c69-aa2f-0a486b33461f from context=de6b3726-c795-4037-bda2-42126ca1b8fb page stack"}
+{"level":30,"time":"2025-07-31T12:01:22.714Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-31T12:01:22.726Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T12:01:22.726Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-31T12:01:22.739Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T12:01:22.739Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T12:01:22.832Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-31T12:01:22.832Z","pid":17716,"hostname":"LAPTOP-5U6QJVAO","msg":"End of node method closeAllBrowsers"}

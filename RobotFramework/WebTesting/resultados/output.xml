@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-07-31T09:01:04.720748" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes Gherkin" source="C:\Robot_01\RobotFramework\WebTesting\amazon_testes_gherkin.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="11">
+<kw name="Abrir o navegador e o site" owner="amazon_resources" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-07-31T09:01:05.128739" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Robot_01\\RobotFramework\\WebTesting\\resultados\\browser\\traces\\temp\\8ad2bb17-d9aa-4248-b800-9c396c6f3978"}</msg>
+<msg time="2025-07-31T09:01:05.195783" level="INFO">Starting Browser process C:\Users\iuria\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64863</msg>
+<msg time="2025-07-31T09:01:07.277039" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Robot_01\\RobotFramework\\WebTesting\\resultados\\browser\\traces\\temp\\8ad2bb17-d9aa-4248-b800-9c396c6f3978"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-07-31T09:01:05.126732" elapsed="2.150307"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-07-31T09:01:09.053650" level="INFO">Successfully initialized new page object and opened url: https://www.amazon.com.br/</msg>
+<msg time="2025-07-31T09:01:09.053650" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${PAGE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-31T09:01:07.278044" elapsed="1.775606"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-07-31T09:01:09.076274" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.054762" elapsed="0.021512"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-07-31T09:01:09.090358" level="INFO">Title: 'Amazon.com.br'</msg>
+<msg time="2025-07-31T09:01:09.090358" level="INFO">${TITULO} = Amazon.com.br</msg>
+<var>${TITULO}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.077277" elapsed="0.013081"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${TITULO}</arg>
+<arg>Amazon</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.090358" elapsed="0.001334"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:05.125721" elapsed="3.967000"/>
+</kw>
+<kw name="Dado que estou na home page da Amazon.com.br" owner="gherkin_resources">
+<kw name="Clicar em &quot;Continuar comprando&quot; se aparecer" owner="amazon_resources">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T09:01:09.096719" level="INFO">Clicks the element '//button[contains(., 'Continuar comprando')]'.</msg>
+<arg>//button[contains(., 'Continuar comprando')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.095719" elapsed="0.521038"/>
+</kw>
+<arg>Click</arg>
+<arg>//button[contains(., 'Continuar comprando')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.094719" elapsed="0.522038"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:09.094719" elapsed="0.522038"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:09.092721" elapsed="0.524036"/>
+</kw>
+<kw name="Quando acessar o menu &quot;Eletrônicos&quot;" owner="gherkin_resources">
+<kw name="Entrar no menu &quot;$MENU&quot;" owner="amazon_resources" source_name="Entrar no menu &quot;${MENU}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T09:01:09.620379" level="INFO">Clicks the element '//a[contains(text(),'Eletrônicos')]'.</msg>
+<arg>//a[contains(text(),'Eletrônicos')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T09:01:09.619374" elapsed="1.861049"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:09.618203" elapsed="1.862220"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:09.616757" elapsed="1.863666"/>
+</kw>
+<kw name="Então o título da página deve ficar" owner="gherkin_resources">
+<kw name="Verificar se o título da pagina fica &quot;${TITULO_PAGE}&quot;" owner="amazon_resources" source_name="Verificar se o título da pagina fica &quot;${TITULO_PAGE}&quot;">
+<kw name="Get Title" owner="Browser">
+<msg time="2025-07-31T09:01:11.590573" level="INFO">Title: 'Eletrônicos e Tecnologia | Amazon.com.br'</msg>
+<arg>==</arg>
+<arg>${TITULO_PAGE}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-07-31T09:01:11.483885" elapsed="0.106688"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:11.482874" elapsed="0.107699"/>
+</kw>
+<arg>Eletrônicos e Tecnologia | Amazon.com.br</arg>
+<status status="PASS" start="2025-07-31T09:01:11.481550" elapsed="0.110148"/>
+</kw>
+<kw name="E o texto &quot;Eletrônicos e Tecnologia&quot; deve ser exibido na página" owner="gherkin_resources">
+<kw name="Verificar se aparece a frase &quot;$FRASE&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-31T09:01:21.872640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-31T09:01:21.872640" level="INFO">See also file:///C:/Robot_01/RobotFramework/WebTesting/resultados/playwright-log.txt for additional details.</msg>
+<msg time="2025-07-31T09:01:21.873642" level="FAIL">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')
+</msg>
+<arg>(//span[contains(text(),'${FRASE}')])[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-07-31T09:01:11.594956" elapsed="10.288887">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')
+</status>
+</kw>
+<status status="FAIL" start="2025-07-31T09:01:11.593893" elapsed="10.289950">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')
+</status>
+</kw>
+<status status="FAIL" start="2025-07-31T09:01:11.591698" elapsed="10.292145">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')
+</status>
+</kw>
+<kw name="E a categoria &quot;Computadores e Informática&quot; deve ser exibida na página" owner="gherkin_resources">
+<status status="NOT RUN" start="2025-07-31T09:01:21.884846" elapsed="0.000000"/>
+</kw>
+<kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-07-31T09:01:22.147694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/screenshot.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/screenshot.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>screenshot.png</arg>
+<arg>mask=//a[@id='nav-cart']</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-07-31T09:01:21.886852" elapsed="0.262307"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-07-31T09:01:22.716144" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-31T09:01:22.149159" elapsed="0.566985"/>
+</kw>
+<status status="PASS" start="2025-07-31T09:01:21.885850" elapsed="0.831297"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-07-31T09:01:05.123681" elapsed="17.593466">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//span[contains(text(),\'$FRASE\')])[1]')
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon</doc>
+<status status="FAIL" start="2025-07-31T09:01:04.723779" elapsed="18.006133"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat name="Amazon Testes Gherkin" id="s1" pass="0" fail="1" skip="0">Amazon Testes Gherkin</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-31T09:01:04.765233" level="WARN">Error in file 'C:\Robot_01\RobotFramework\WebTesting\amazon_resources.robot' on line 50: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
